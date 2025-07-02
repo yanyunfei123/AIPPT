@@ -6,7 +6,7 @@ class TaskProcessor:
     def __init__(self, task, db):
         self.task = task
         self.db = db
-        self.ppt = PPTService(task.token)
+        self.ppt = PPTService(task.work_token)
 
     def process(self):
         try:

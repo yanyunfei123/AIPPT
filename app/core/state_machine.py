@@ -14,6 +14,7 @@ class TaskStateMachine:
             "content_creating": "merging",
             "merging": "exporting",
             "exporting": "success",
+            "success": "success",
         }
         return transitions.get(self.task.status)
 
@@ -40,7 +41,7 @@ class TaskStateMachine:
             key = ppt.export_file(file_id)
             return f"UPDATE cap_hiagent.hiagent_async_tasks SET status='exporting', file_key='{key}', update_time=NOW() WHERE id='{tid}';"
 
-        if self.task.status == "exporting":
+        if self.task.status == "exporting" or self.task.status == "success":
             url = ppt.check_export(self.task.file_key)
             if url:
                 return f"UPDATE cap_hiagent.hiagent_async_tasks SET status='success', file_url='{url}', update_time=NOW() WHERE id='{tid}';"
