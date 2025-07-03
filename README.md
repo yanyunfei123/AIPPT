@@ -1,5 +1,3 @@
----
-
 ```markdown
 # 🧠 AIPPT - AI 驱动的 PPT 生成任务系统
 
