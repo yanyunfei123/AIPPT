@@ -9,12 +9,7 @@ AIPPT 是一个基于 Python 构建的后端工作流系统，自动处理 AI �
 ---
 
 ## 📁 项目结构
-
-```
-
 <pre><code>AIPPT/ ├── app/ # 核心应用代码 │ ├── core/ # 工作流调度、任务管理 │ ├── models/ # 数据模型（如 Task） │ ├── services/ # 任务处理逻辑 │ ├── utils/ # 日志、HTTP 封装、工具函数 ├── logs/ # 自动生成的日志和任务归档 │ ├── aippt_YYYY-MM-DD.log # 每日运行日志 │ ├── tasks_YYYY-MM-DD.csv # 每日任务快照 ├── main.py # 程序入口：主循环逻辑 ├── requirements.txt # 项目依赖列表 ├── README.md # 项目说明文档 </code></pre>
-
-````
 
 ---
 
