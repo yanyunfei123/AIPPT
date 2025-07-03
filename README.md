@@ -1,5 +1,3 @@
-当然，这是你的 `README.md` 内容，**原样 Markdown 格式**，你可以直接复制粘贴到项目根目录下保存为 `README.md`：
-
 ---
 
 ```markdown
